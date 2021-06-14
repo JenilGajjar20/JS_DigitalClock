@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #161616;
+}
+
+.clock {
+  user-select: none;
+  color: cyan;
+  font-size: 4rem;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 20px 20px rgba(0, 0, 0, 0.95), 0 40px 20px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 450px) {
+  .clock {
+    font-size: 2.5rem;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+}
+
+.footer p {
+  color: #f4f4f4;
+}
+
+.footer p a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #f4f4f4;
+}
+
+.footer p a:hover {
+  color: rgb(4, 75, 122);
+}
